@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eaeaea;
+    margin: 0;
+    user-select: none;
+}
+
+.urna {
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+.tela {
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #e8f0e8, #c7d3c5);
+    border: 2px solid #555;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.layout-voto {
+    display: flex;
+    justify-content: space-between;
+    height: 85%;
+}
+
+.info-esquerda {
+    width: 70%;
+}
+
+.topo-voto {
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    opacity: 0;
+}
+
+#cargo {
+    margin: 5px 0;
+}
+
+.rotulo-numero {
+    font-size: 16px;
+}
+
+.dados-candidato {
+    line-height: 1.4;
+}
+
+/* Foto do candidato */
+.foto-direita {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foto-cand {
+    width: 100%;
+    height: 120px;
+    border: 1px solid #000;
+    background-color: #fff;
+    object-fit: cover;
+    display: none;
+}
+
+
+.container-numeros {
+    display: flex;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.caixa-numero {
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+/* Instruções da Base */
+.instrucoes {
+    border-top: 1px solid #000;
+    font-size: 11px;
+    padding-top: 5px;
+}
+
+.txt-verde { color: green; font-weight: bold; }
+.txt-laranja { color: orange; font-weight: bold; }
+
+/* Teclado Físico */
+.teclado {
+    background-color: #403a3a;
+    margin-left: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-gap: 15px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.teclado button {
+    height: 45px;
+    background-color: #111;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 0px #000;
+}
+
+.teclado button:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+.btn-zero {
+    grid-column: 2;
+}
+
+/* Botões Especiais */
+/* Botões Especiais */
+.btn-branco { 
+    background-color: #fff !important; 
+    color: black !important; 
+    font-size: 10px !important;
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.btn-corrige { 
+    background-color: #f05d23 !important; 
+    color: black !important; 
+    font-size: 10px !important;
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.btn-confirma { 
+    background-color: #00a859 !important; 
+    color: black !important; 
+    font-size: 10px !important; 
+    height: 45px !important;
+    grid-column: 3;
+    grid-row: 5;
+}
+
+/* Animação Pisca */
+.pisca { animation: pisca 1s infinite; }
+@keyframes pisca {
+    0% { border-color: #000; opacity: 1; }
+    50% { border-color: transparent; opacity: 0.4; }
+    100% { border-color: #000; opacity: 1; }
+}
+
+/* Layout de Fim */
+.tela-fim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 75px;
+    font-weight: bold;
+    color: #222;
+}
+    
